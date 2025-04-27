@@ -1,5 +1,7 @@
 To create the table used for the program, you must first run the table.py
 
+This will create the 'table_update.db'
+
 You must import sqlite3 on the table.py
 
 For the code for Python_P.py
