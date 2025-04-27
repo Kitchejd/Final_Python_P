@@ -31,7 +31,7 @@ def insert_row(id, info, current_time):
 
     conn.commit()
     formatted_date = current_time.strftime("%Y-%m-%d %H:%M:%S")
-    #insert_row(5, 'Kenn', formatted_date)
+  
 
 def select_all_data():
      cursor.execute("SELECT * FROM data_table")
