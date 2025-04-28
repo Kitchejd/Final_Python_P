@@ -31,7 +31,7 @@ def insert_row(id, info, current_time):
 
     conn.commit()
     formatted_date = current_time.strftime("%Y-%m-%d %H:%M:%S")
-  
+
 
 def select_all_data():
      cursor.execute("SELECT * FROM data_table")
@@ -49,7 +49,7 @@ def main():
         if option == '1':
            id = input("Enter the id: ")
            info = input("Enter name: ")
-           insert_row(id, info, current_time=datetime.now())
+           insert_row(id, info, current_time=datetime.now("%Y-%m-%d %H:%M:%S"))
         elif option== '2':
            
             print(select_all_data())
@@ -61,4 +61,5 @@ def main():
 if __name__ == "__main__":
       main()
       conn.close()
+
 
